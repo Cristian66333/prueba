@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body onload="comboBox()" >
+
+    <div class="card">
+        <div class="card-header">
+                <h2>Hello world</h2>
+        </div>
+        <div class="card-body" >
+                <h2>Realizar venta</h1>
+                <div class="col-sm-6">
+                  <select id="selector" class="form-select" aria-label="Default select example" onchange="showAlert()">
+                  </select>
+              </div>
+
+              <div>
+                &nbsp;
+              </div>
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Precio</label>
+                      <input  id="Precio" name="Precio" type="text" class="form-control" aria-describedby="preciolHelp" disabled>
+                      
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Fecha vencimiento</label>
+                      <input  id="fecha" type="text" class="form-control" aria-describedby="fechaHelp" disabled>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Tipo producto</label>
+                      <input  id="tipo" type="text" class="form-control" aria-describedby="tipoHelp" disabled>
+                    </div>
+                   
+                  </form>
+
+                <form>
+                  <div class="col-3">
+                    <label for="exampleInputEmail1" class="form-label">Cantidad a vender</label>
+                      <input  id="cantidad" name="Precio" type="text" class="form-control" aria-describedby="preciolHelp"  onkeypress="return onlyNums( event )">
+                        &nbsp;
+                      <div>
+                        <button type="button" class="btn btn-primary" onclick="sell()">Vender</button>
+                      </div>
+                  </div>
+                </form>
+
+                <table id="tableVentas" class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Descripción</th>
+                      <th scope="col">Valor Unitario</th>
+                      <th scope="col">Cantidad Vendida</th>
+                      <th scope="col">Valor IVA</th>
+                      <th scope="col">Subtotal</th>
+                    </tr>
+                  </thead>
+                  <tfoot id="tfoot">
+
+                  </tfoot>
+                  
+                </table>
+                
+
+              
+                  
+        </div>
+        <div class="card-footer">
+            <h5>copyright (c)</h5>
+        </div>
+        
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>ml>
